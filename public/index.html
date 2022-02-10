@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple Ecommerce</title>
+    <script
+      src="https://kit.fontawesome.com/d480ebffb2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JIT compiler version of Tailwind CSS -->
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-black">
+    <nav class="top-0 absolute z-50 w-full flex-wrap items-center justify-between px-2 py-3">
+      <div class="container px-4 mx-auto flex-wrap items-center justify-between">
+        <div class="w-full relative flex justify-between lg:auto lg:static lg:block lg:justify-start">
+          <a href="#home" 
+            class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white">
+            home
+          </a>
+          <button type="button" class="hamburgerContainer cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent
+            rounded bg-transparent block lg:hidden lg:outline-none focus:outline-none" >
+            <i class="text-white fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
+          id="example-collapse-navbar">
+          <ul class="flex flex-col lg:flex-row list-none mr-auto">
+            <li class="flex items-center">
+              <a href="#ipad" class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">
+                <i class="lg:text-gray-300 text-gray-500 fas fa-tablet text-lg leading-relaxed"></i>iPad
+              </a>
+            </li>
+
+            <li class="flex items-center">
+              <a href="#macbook" class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">
+                <i class="lg:text-gray-300 text-gray-500 fas fa-laptop text-lg leading-relaxed"></i>MacBook
+              </a>
+            </li>
+
+            <li class="flex items-center">
+              <a href="#team" class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">
+                <i class="lg:text-gray-300 text-gray-500 fas fa-users text-lg leading-relaxed"></i>Team
+              </a>
+            </li>
+
+            <li class="flex items-center">
+              <a href="#contact" class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">
+                <i class="lg:text-gray-300 text-gray-500 fas fa-address-card text-lg leading-relaxed"></i>Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- custom script... -->
+    <script src="script.js"></script>
+  </body>
+</html>
