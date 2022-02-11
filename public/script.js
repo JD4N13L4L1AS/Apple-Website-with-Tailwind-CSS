@@ -1,10 +1,10 @@
 const hamburgerContainerTag = document.querySelector('.hamburgerContainer');
 
-const toggleNavbar = (collapseId) => {
-  const collapseNavbar = document.querySelector(collapseId);
-  collapseNavbar.classList.toggle('hidden');
-  collapseNavbar.classList.toggle('block');
+const toggleNavbar = () => {
+  const collapseNavbarTag = document.querySelector('#example-collapse-navbar');
+  collapseNavbarTag.classList.toggle('hidden');
+  collapseNavbarTag.classList.toggle('block');
 }
 
-hamburgerContainerTag.addEventListener('click', toggleNavbar('#example-collapse-navbar'));
+hamburgerContainerTag.addEventListener('click', toggleNavbar);
 
