@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (min-width: 550px) {
+  .min-h-home-lg {
+    min-height: 75vh;
+  }
+}

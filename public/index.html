@@ -12,9 +12,9 @@
     <!-- JIT compiler version of Tailwind CSS -->
     <link href="output.css" rel="stylesheet" />
   </head>
-  <body class="bg-black">
+  <body>
     <nav
-      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3"
+      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 bg-black"
     >
       <div
         class="container px-4 mx-auto flex flex-wrap items-center justify-between"
@@ -43,7 +43,7 @@
             <li class="flex items-center">
               <a
                 href="#ipad"
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs font-bold"
               >
                 <i
                   class="lg:text-gray-300 text-gray-500 fas fa-tablet text-lg leading-relaxed mr-2"
@@ -55,7 +55,7 @@
             <li class="flex items-center">
               <a
                 href="#macbook"
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs font-bold"
               >
                 <i
                   class="lg:text-gray-300 text-gray-500 fas fa-laptop text-lg leading-relaxed mr-2"
@@ -128,6 +128,145 @@
         </div>
       </div>
     </nav>
+
+    <main>
+      <div
+        class="relative pt-16 lg:pb-32 flex content-center items-center justify-center min-h-home-lg"
+        id="home"
+      >
+        <div class="absolute w-full h-full">
+          <video autoplay muted class="top-0 bg-center">
+            <!-- bg-black lg:pr-28-->
+            <source
+              src="https://www.apple.com/105/media/us/macbook-pro-13/2020/f2b14406-42ad-405e-bfa0-71b52a0bfd67/anim/chip/large_2x.mp4"
+            />
+          </video>
+        </div>
+        <div class="container relative mx-auto hidden md:block">
+          <div class="flex items-center flex-wrap">
+            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <div class="pr-12">
+                <h1 class="text-white font-semibold text-5xl -mt-36">
+                  <!---mt-40 mr-12-->
+                  Welcome to Apple.
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="pb-20 mt-40 bg-gray-100" id="ipad">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap">
+            <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-12 shadow-lg rounded-full bg-red-400"
+                  >
+                    <i class="fas fa-tablet"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">iPad Pro</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Numquam, facere soluta natus neque quibusdam explicabo id
+                    hic dolor qui tenetur?
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full md:w-4/12 px-4 text-center">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
+                  >
+                    <i class="fas fa-laptop"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">MacBook Pro</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Numquam, facere soluta natus neque quibusdam explicabo id
+                    hic dolor qui tenetur?
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-12 shadow-lg rounded-full bg-green-400"
+                  >
+                    <i class="fas fa-mobile"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">iPhone</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Numquam, facere soluta natus neque quibusdam explicabo id
+                    hic dolor qui tenetur?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center mt-32">
+          <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+            <div
+              class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-200"
+            >
+              <i class="fas fa-tablet text-xl"></i>
+            </div>
+            <h3 class="text-3xl mb-2 font-semibold">New iPad Pro.</h3>
+            <p class="text-lg font-light leading-relaxed mt-4 text-gray-700">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis adipisci, ut voluptates beatae ad vitae voluptatum
+              minus sit. Voluptatem esse velit laboriosam sunt debitis ipsa
+              dolores eaque asperiores laborum iusto?
+            </p>
+
+            <p class="text-lg font-light leading-relaxed mt-4 text-gray-700">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis adipisci, ut voluptates beatae ad vitae voluptatum
+              minus sit. Voluptatem esse velit laboriosam sunt debitis ipsa
+              dolores eaque asperiores laborum iusto?
+            </p>
+          </div>
+          <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+            <div
+              class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-black"
+            >
+              <img
+                class="w-full align-middle rounded-t-lg"
+                src="https://www.apple.com/v/ipad/home/bn/images/overview/trade_in__ejwkdm497no2_small_2x.jpg"
+                alt="iPad Pro"
+              />
+              <blockquote class="relative p-8 mb-4 bg-black">
+                <h4 class="text-lg font-bold text-white">
+                  iPad Pro 12.9 & 11 inches.
+                </h4>
+                <p class="text-md font-light mt-2 text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Exercitationem impedit porro sunt. Praesentium omnis numquam
+                  aliquid officia eius, laborum repellat?
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- custom script... -->
     <script src="script.js"></script>
   </body>
